@@ -7,6 +7,63 @@ body, html
 	rect 100%
 	margin 0
 	padding 0
-	overflow hidden
 	font-family monospace
+
+gs = 8px
+
+.icon
+	rect 4*gs
+
+
+.line-b
+	overflow: hidden
+
+	// + .line-b
+	// 	margin-top 4*gs
+
+	&.is-line1
+		height gs
+
+	&.is-line2
+		height 2*gs
+
+	for i in 1..100
+		&.is-line{i}
+			.icon
+				rect (i/2)*gs
+
+	// &.is-line1
+	// 	.icon 
+	// 		rect gs
+
+	// &.is-line2
+	// 	.icon 
+	// 		rect 2*gs
+
+	// &.is-line3
+	// 	.icon 
+	// 		rect 3*gs
+
+	// &.is-line4
+	// 	.icon 
+	// 		rect 4*gs
+
+	// &.is-line5
+	// 	.icon 
+	// 		rect 5*gs
+
+	// &.is-line6
+	// 	.icon 
+	// 		rect 6*gs
+
+	// &.is-line7
+	// 	.icon 
+	// 		rect 7*gs
+
+	// &.is-line8
+	// 	.icon 
+	// 		rect 8*gs
+
+	.icon
+		float left
 
